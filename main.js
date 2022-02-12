@@ -49,7 +49,7 @@ camera = document.getElementById("camera");
 
 function take_snapshot() 
 {
-    webcam.snap(function(data_uri) {
+    Webcam.snap(function(data_uri) {
         document.getElementById("result").innerHTML = '<img id="selfie_image" src="'+data_uri+'"';
     });
 }
